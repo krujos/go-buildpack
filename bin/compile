@@ -175,7 +175,8 @@ PATH=$GOROOT/bin:$PATH
 
 if [ $name == "." ] 
 then 
-	echo -e "Detected an ImportPath of "." in Godeps.json, a full import path for this application is required."
+	echo -e "Detected an ImportPath of "." in Godeps.json, a full ImportPath is required."
+	echo -e "Change \"ImportPath\": \".\" to \"ImportPath\": \"github.com/username/application_name\""
 	exit 1
 fi
 p=$GOPATH/src/$name
